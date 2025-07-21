@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocha Cavalcante - Excelência em Manutenção e Automação Industrial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #111827 100%);
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .nav-link:hover {
+            color: #f59e0b;
+        }
+        .active {
+            color: #f59e0b;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header/Navigation -->
+    <header class="bg-gray-900 text-white sticky top-0 z-50 shadow-lg px-8">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="bg-white w-20 h-20 rounded-full flex items-center justify-center mr-3">
+                    <!--<i class="fas fa-cogs text-gray-900 text-xl"></i>-->
+                    <img src="logoEmpresa.png" alt="Logo Rocha Cavalcante" class="w-14 h-14">
+                </div>
+                <h1 class="text-xl font-bold">Rocha Cavalcante</h1>
+            </div>
+            
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#services" class="nav-link">Serviços</a>
+                <a href="#about" class="nav-link">Quem Somos</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </nav>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 pb-4">
+            <div class="container mx-auto px-4 flex flex-col space-y-3">
+                <a href="#home" class="nav-link py-2 active">Home</a>
+                <a href="#services" class="nav-link py-2">Serviços</a>
+                <a href="#about" class="nav-link py-2">Quem Somos</a>
+                <a href="#contact" class="nav-link py-2">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-40 px-8">
+        <div class="container mx-auto px-8 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/1 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Excelência em Manutenção e Automação Industrial</h1>
+                <p class="text-xl mb-8">Soluções técnicas integradas desde 2018, garantindo eficiência e segurança para sua operação industrial.</p>
+                <a href="#contact" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-6 rounded-lg inline-flex items-center transition duration-300">
+                    Solicite uma visita técnica
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="bg-gray-800 p-6 rounded-xl shadow-2xl border border-gray-700 max-w-md">
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center w-32">
+                            <i class="fas fa-robot text-yellow-500 text-3xl mb-2"></i>
+                            <span class="text-sm text-center">Automação Industrial</span>
+                        </div>
+                        <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center w-32">
+                            <i class="fas fa-bolt text-yellow-500 text-3xl mb-2"></i>
+                            <span class="text-sm text-center">Manutenção Elétrica</span>
+                        </div>
+                        <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center w-32">
+                            <i class="fas fa-solar-panel text-yellow-500 text-3xl mb-2"></i>
+                            <span class="text-sm text-center">Energia Solar</span>
+                        </div>
+                        <div class="bg-gray-700 p-4 rounded-lg flex flex-col items-center w-32">
+                            <i class="fas fa-file-alt text-yellow-500 text-3xl mb-2"></i>
+                            <span class="text-sm text-center">Consultoria NR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white px-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Nossos Serviços</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-gray-50 rounded-xl p-6 shadow-md border border-gray-200 transition duration-300">
+                    <div class="bg-blue-900 text-yellow-500 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-robot text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Automação Industrial</h3>
+                    <p class="text-gray-600 mb-4">Sistemas completos de automação para otimizar seus processos industriais, aumentando produtividade e reduzindo custos.</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i> CLPs e IHM</li>
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i> Redes industriais</li>
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i> Sistemas SCADA</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-gray-50 rounded-xl p-6 shadow-md border border-gray-200 transition duration-300">
+                    <div class="bg-blue-900 text-yellow-500 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-bolt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Manutenção Elétrica e Mecânica</h3>
+                    <p class="text-gray-600 mb-4">Manutenção preventiva, preditiva e corretiva para garantir a continuidade operacional do seu negócio.</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i> Quadros elétricos</li>
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i> Motores e bombas</li>
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i> Sistemas hidráulicos</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-gray-50 rounded-xl p-6 shadow-md border border-gray-200 transition duration-300">
+                    <div class="bg-blue-900 text-yellow-500 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-solar-panel text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Geração de Energia</h3>
+                    <p class="text-gray-600 mb-4">Soluções em geração de energia limpa e convencional para garantir o fornecimento contínuo.</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i> Sistemas fotovoltaicos</li>
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i> Grupos geradores</li>
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i> Sistemas híbridos</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-gray-50 rounded-xl p-6 shadow-md border border-gray-200 transition duration-300">
+                    <div class="bg-blue-900 text-yellow-500 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-file-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Consultoria em Normas Técnicas</h3>
+                    <p class="text-gray-600 mb-4">Implementação e adequação às normas regulamentadoras para garantir segurança e conformidade.</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i> NR10 - Instalações elétricas</li>
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i> NR12 - Máquinas e equipamentos</li>
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i> NR13 - Vasos de pressão</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card bg-gray-50 rounded-xl p-6 shadow-md border border-gray-200 transition duration-300">
+                    <div class="bg-blue-900 text-yellow-500 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-thermometer-half text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Termografia e Análise de Vibração</h3>
+                    <p class="text-gray-600 mb-4">Diagnósticos precisos através de tecnologias avançadas de manutenção preditiva.</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i> Inspeção termográfica</li>
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i> Análise de vibração</li>
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i> Relatórios técnicos</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card bg-gray-50 rounded-xl p-6 shadow-md border border-gray-200 transition duration-300">
+                    <div class="bg-blue-900 text-yellow-500 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-ship text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Manutenção Naval</h3>
+                    <p class="text-gray-600 mb-4">Serviços especializados para embarcações e estruturas flutuantes.</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i> Sistemas de propulsão</li>
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i> Geração de energia</li>
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i> Automação naval</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Success Case -->
+            <div class="mt-16 bg-gray-800 text-white rounded-xl p-8 shadow-lg">
+                <h3 class="text-2xl font-bold mb-4 text-yellow-500">Caso de Sucesso</h3>
+                <h4 class="text-xl font-semibold mb-3">Sistema de Medição de Combustível com Integração ao Power BI</h4>
+                <p class="mb-4">Implementamos um sistema completo de medição e monitoramento de combustível em tempo real para uma grande frota de máquinas industriais, com integração direta ao Power BI para análise de dados e tomada de decisão estratégica.</p>
+                <div class="flex flex-wrap gap-4">
+                    <div class="bg-gray-700 px-4 py-2 rounded-lg flex items-center">
+                        <i class="fas fa-chart-line text-yellow-500 mr-2"></i>
+                        <span>Redução de 15% no consumo</span>
+                    </div>
+                    <div class="bg-gray-700 px-4 py-2 rounded-lg flex items-center">
+                        <i class="fas fa-clock text-yellow-500 mr-2"></i>
+                        <span>Monitoramento 24/7</span>
+                    </div>
+                    <div class="bg-gray-700 px-4 py-2 rounded-lg flex items-center">
+                        <i class="fas fa-bell text-yellow-500 mr-2"></i>
+                        <span>Alertas automáticos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-100 px-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Quem Somos</h2>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <div class="bg-white p-8 rounded-xl shadow-md">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800">Nossa História</h3>
+                        <p class="text-gray-600 mb-6">Fundada em 2018, a Rocha Cavalcante Serviços Ltda surgiu da união de profissionais experientes no mercado industrial, com o objetivo de oferecer soluções técnicas integradas com excelência e inovação.</p>
+                        <p class="text-gray-600">Ao longo dos anos, consolidamos nossa reputação como parceiros confiáveis para empresas de diversos segmentos industriais, sempre priorizando a qualidade, segurança e eficiência em nossos serviços.</p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-xl shadow-md mt-8">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800">Nossa Missão</h3>
+                        <p class="text-gray-600">Prestar serviços técnicos especializados com qualidade, inovação e comprometimento, contribuindo para a eficiência operacional e segurança de nossos clientes.</p>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-white p-8 rounded-xl shadow-md">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800">Nossa Visão</h3>
+                        <p class="text-gray-600 mb-6">Ser reconhecida como referência em soluções industriais integradas, destacando-nos pela excelência técnica, inovação e compromisso com a satisfação do cliente.</p>
+                        <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4">
+                            <p class="text-gray-700 italic">"Buscamos constantemente a evolução tecnológica para oferecer as melhores soluções ao mercado industrial."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-xl shadow-md mt-8">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800">Nossos Valores</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <div class="flex items-center mb-2">
+                                    <div class="bg-blue-900 text-yellow-500 w-8 h-8 rounded-full flex items-center justify-center mr-3">
+                                        <i class="fas fa-handshake"></i>
+                                    </div>
+                                    <h4 class="font-semibold">Ética</h4>
+                                </div>
+                                <p class="text-sm text-gray-600">Agimos com transparência e integridade em todas as nossas relações.</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <div class="flex items-center mb-2">
+                                    <div class="bg-blue-900 text-yellow-500 w-8 h-8 rounded-full flex items-center justify-center mr-3">
+                                        <i class="fas fa-lightbulb"></i>
+                                    </div>
+                                    <h4 class="font-semibold">Inovação</h4>
+                                </div>
+                                <p class="text-sm text-gray-600">Buscamos constantemente novas tecnologias e soluções criativas.</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <div class="flex items-center mb-2">
+                                    <div class="bg-blue-900 text-yellow-500 w-8 h-8 rounded-full flex items-center justify-center mr-3">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <h4 class="font-semibold">Segurança</h4>
+                                </div>
+                                <p class="text-sm text-gray-600">Priorizamos a segurança em todos os nossos processos e serviços.</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <div class="flex items-center mb-2">
+                                    <div class="bg-blue-900 text-yellow-500 w-8 h-8 rounded-full flex items-center justify-center mr-3">
+                                        <i class="fas fa-leaf"></i>
+                                    </div>
+                                    <h4 class="font-semibold">Sustentabilidade</h4>
+                                </div>
+                                <p class="text-sm text-gray-600">Promovemos práticas ambientalmente responsáveis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-blue-900 text-white rounded-xl p-8 shadow-lg">
+                <h3 class="text-2xl font-bold mb-4 text-yellow-500">Compromisso com Normas e Segurança</h3>
+                <p class="mb-6">Na Rocha Cavalcante, seguimos rigorosamente todas as normas regulamentadoras aplicáveis, garantindo a segurança de nossos colaboradores e clientes em cada projeto executado.</p>
+                <div class="flex flex-wrap gap-4">
+                    <div class="bg-blue-800 px-4 py-2 rounded-lg flex items-center">
+                        <i class="fas fa-certificate text-yellow-500 mr-2"></i>
+                        <span>NR10 - Segurança em Instalações Elétricas</span>
+                    </div>
+                    <div class="bg-blue-800 px-4 py-2 rounded-lg flex items-center">
+                        <i class="fas fa-certificate text-yellow-500 mr-2"></i>
+                        <span>NR12 - Segurança no Trabalho em Máquinas</span>
+                    </div>
+                    <div class="bg-blue-800 px-4 py-2 rounded-lg flex items-center">
+                        <i class="fas fa-certificate text-yellow-500 mr-2"></i>
+                        <span>NR13 - Caldeiras e Vasos de Pressão</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients & Suppliers Section -->
+    <section class="py-16 bg-white px-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Nossos Parceiros</h2>
+            
+            <div class="mb-12">
+                <h3 class="text-xl font-semibold mb-6 text-center text-gray-700">Clientes</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                    <!-- Client Logo Placeholders - replace with actual client logos -->
+                    <div class="bg-gray-100 p-6 rounded-lg flex items-center justify-center h-32">
+                        <img src="logo-tbl.png" alt="Nome do Cliente" class="max-h-20 max-w-full">
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg flex items-center justify-center h-32">
+                       <img src="logo-amaggi.png" alt="Nome do Cliente" class="max-h-30 max-w-full"> 
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg flex items-center justify-center h-32">
+                        <img src="logo-mega-logistica.png" alt="Nome do Cliente" class="max-h-20 max-w-full">
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg flex items-center justify-center h-32">
+                        <img src="logo-DER.png" alt="Nome do Cliente" class="max-h-20 max-w-full">
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg flex items-center justify-center h-32">
+                        <img src="logo-amazon-gas.png" alt="Nome do Cliente" class="max-h-20 max-w-full">
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg flex items-center justify-center h-32">
+                        <img src="logo-beconal.png" alt="Nome do Cliente" class="max-h-20 max-w-full">
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold mb-6 text-center text-gray-700">Fornecedores</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                    <!-- Supplier Logo Placeholders - replace with actual supplier logos -->
+                    <div class="bg-gray-100 p-6 rounded-lg flex items-center justify-center h-32">
+                        <img src="fornecedor-allen.png" alt="Fornecedor 1" class="max-h-20 max-w-full">
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg flex items-center justify-center h-32">
+                        <img src="fornecedor-weg.png" alt="Fornecedor 1" class="max-h-20 max-w-full">
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg flex items-center justify-center h-32">
+                        <img src="fornecedor-siemens.png" alt="Fornecedor 1" class="max-h-20 max-w-full">
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg flex items-center justify-center h-32">
+                        <img src="fornecedor-DEIF.png" alt="Fornecedor 1" class="max-h-20 max-w-full">
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg flex items-center justify-center h-32">
+                        <img src="fornecedor-wago.png" alt="Fornecedor 1" class="max-h-20 max-w-full">
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg flex items-center justify-center h-32">
+                        <img src="fornecedor-GrupoJAV.png" alt="Fornecedor 1" class="max-h-20 max-w-full">
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg flex items-center justify-center h-32">
+                        <img src="fornecedor-Logoelipse.png" alt="Fornecedor 1" class="max-h-20 max-w-full">
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg flex items-center justify-center h-32">
+                        <img src="fornecedor-FactoryTalk.png" alt="Fornecedor 1" class="max-h-20 max-w-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-8 bg-gray-800 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Entre em Contato</h2>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <form class="bg-gray-700 p-8 rounded-xl shadow-md">
+                        <h3 class="text-2xl font-bold mb-6 text-yellow-500">Envie sua mensagem</h3>
+                        
+                        <div class="mb-4">
+                            <label for="name" class="block mb-2">Nome completo</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 rounded-lg bg-gray-600 border border-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="email" class="block mb-2">E-mail</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 rounded-lg bg-gray-600 border border-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="phone" class="block mb-2">Telefone</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 rounded-lg bg-gray-600 border border-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block mb-2">Mensagem</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 rounded-lg bg-gray-600 border border-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-500"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-6 rounded-lg w-full transition duration-300">
+                            Enviar mensagem
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-700 p-8 rounded-xl shadow-md h-full">
+                        <h3 class="text-2xl font-bold mb-6 text-yellow-500">Nossos contatos</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-blue-900 text-yellow-500 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-envelope text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">E-mail</h4>
+                                    <a href="mailto:rochacavalcante2018@gmail.com" class="text-gray-300 hover:text-yellow-500 transition duration-300">rochacavalcante2018@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-blue-900 text-yellow-500 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-phone-alt text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Telefone/WhatsApp</h4>
+                                    <a href="https://wa.me/5593991127525" class="text-gray-300 hover:text-yellow-500 transition duration-300">(93) 99112-7525</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-blue-900 text-yellow-500 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-map-marker-alt text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Localização</h4>
+                                    <p class="text-gray-300">Atendemos em toda região Norte do Brasil</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-10 bg-gray-800 p-6 rounded-lg flex flex-col items-center">
+                            <h4 class="text-lg font-bold mb-4 text-center">Escaneie e converse conosco</h4>
+                            <div class="bg-white p-3 rounded-lg mb-4">
+                                <!-- Placeholder for QR Code - in a real scenario, you would insert an actual QR code image -->
+                                <div class="w-32 h-32 bg-gray-300 flex items-center justify-center">
+                                    <!--<span class="text-gray-600">QR Code</span>-->
+                                    <img src="QrCode_whtspp.png" alt="QR Code" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            <a href="https://wa.me/5593991127525" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg inline-flex items-center transition duration-300">
+                                <i class="fab fa-whatsapp mr-2 text-xl"></i>
+                                Abrir WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between mb-8">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-white w-10 h-10 rounded-full flex items-center justify-center mr-3">
+                            <!--<i class="fas fa-cogs text-gray-900 text-xl"></i>-->
+                            <img src="logoEmpresa.png" alt="Logo Rocha Cavalcante" class="w-8 h-8">
+                        </div>
+                        <h3 class="text-xl font-bold">Rocha Cavalcante</h3>
+                    </div>
+                    <p class="text-gray-400 max-w-md">Excelência em Manutenção e Automação Industrial desde 2018, oferecendo soluções técnicas integradas com qualidade e segurança.</p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-lg font-bold mb-4 text-yellow-500">Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#home" class="text-gray-400 hover:text-yellow-500 transition duration-300">Home</a></li>
+                            <li><a href="#services" class="text-gray-400 hover:text-yellow-500 transition duration-300">Serviços</a></li>
+                            <li><a href="#about" class="text-gray-400 hover:text-yellow-500 transition duration-300">Quem Somos</a></li>
+                            <li><a href="#contact" class="text-gray-400 hover:text-yellow-500 transition duration-300">Contato</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-bold mb-4 text-yellow-500">Serviços</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#services" class="text-gray-400 hover:text-yellow-500 transition duration-300">Automação Industrial</a></li>
+                            <li><a href="#services" class="text-gray-400 hover:text-yellow-500 transition duration-300">Manutenção Elétrica</a></li>
+                            <li><a href="#services" class="text-gray-400 hover:text-yellow-500 transition duration-300">Energia Solar</a></li>
+                            <li><a href="#services" class="text-gray-400 hover:text-yellow-500 transition duration-300">Consultoria NR</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-bold mb-4 text-yellow-500">Redes Sociais</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-gray-700 hover:bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="bg-gray-700 hover:bg-blue-400 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="bg-gray-700 hover:bg-pink-600 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://wa.me/5593991127525" class="bg-gray-700 hover:bg-green-600 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-gray-800 text-center text-gray-400">
+                <p>&copy; 2024 Rocha Cavalcante Serviços Ltda. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                // Close mobile menu if open
+                mobileMenu.classList.add('hidden');
+                
+                // Update active link
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.classList.remove('active');
+                });
+                this.classList.add('active');
+                
+                // Scroll to section
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Update active link on scroll
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY;
+            
+            document.querySelectorAll('section').forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
